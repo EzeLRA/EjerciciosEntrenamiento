@@ -1,7 +1,0 @@
-Ejercicio obtenido en codeforces: Way Too Long Words
- Se desea abreviar las palabras que sobrepasen los 10 caracteres de largo de modo que
-para aquellas que sobrepasen el limite puedan abreviarse de la siguiente manera:
-	letra = letra (se mantiene)
-	estratosferico = e12o (primer caracter)(en el medio se indica la cantidad de caracteres en el medio)(ultimo caracter)
-
-Los numeros que se lleguen a ingresar no son procesados ej: "123" (no se procesa, es ignorado)

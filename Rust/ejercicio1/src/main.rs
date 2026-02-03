@@ -1,26 +1,39 @@
 use std::io;
+/*
+    One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest 
+    and the ripest one, in their opinion. After that the watermelon was weighed, and the scales 
+    showed w "kilos". They rushed home, dying of thirst, and decided to divide the berry, 
+    however they faced a hard problem.
 
-fn abreviar(cad: &str) -> String {
-    if cad.len() > 10 {
-        let first_char = cad.chars().next().unwrap_or_default();
-        let last_char = cad.chars().last().unwrap_or_default();
-        let middle_length = cad.len() - 2;
-        format!("{}{}{}", first_char, middle_length, last_char)
-    } else {
-        cad.to_string()
-    }
-}
+    Pete and Billy are great fans of even numbers, that's why they want to divide the watermelon
+    in such a way that each of the two parts weighs even number of kilos, at the same time it is 
+    not obligatory that the parts are equal. The boys are extremely tired and want to 
+    start their meal as soon as possible, that's why you should help them and find out, if they 
+    can divide the watermelon in the way they want. For sure, each of them should get a 
+    part of positive weight.
 
+    Input
+    The first (and the only) input line contains integer number w (1 ≤ w ≤ 100) — the weight of the watermelon bought by the boys.
+
+    Output
+    Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.
+
+*/
 fn main() {
-    
-    let mut entrada = String::new(); 
+    let mut read_in = String::new();
+    io::stdin().read_line(&mut read_in).expect("Read Error");
 
-    if let Ok(_) = io::stdin().read_line(&mut entrada) {
-        let cad = entrada.trim();
+    let w : u8 = read_in.trim().parse().expect("Must be insert a number");
+
+    if w > 2 {
         
-        if !cad.chars().all(|c| c.is_ascii_digit()) {
-            println!("{}", abreviar(cad));
+        if (w % 2) == 0 {
+            println!("YES");
+        }else{
+            println!("NO");
         }
+    }else{
+        println!("NO");
     }
 
 }
