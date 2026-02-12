@@ -1,0 +1,1 @@
+C:\Users\Ezequiel\Desktop\Programas\ y\ juegos\Programas\ para\ programar\EjerciciosEntrenamiento\Rust\ejercicio4\target\debug\ejercicio4.exe: C:\Users\Ezequiel\Desktop\Programas\ y\ juegos\Programas\ para\ programar\EjerciciosEntrenamiento\Rust\ejercicio4\src\main.rs
